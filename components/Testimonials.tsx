@@ -15,8 +15,8 @@ export default function Testimonials() {
               ))}
             </div>
             <p className="mb-4">
-              "The quality and style of all blue's clothing is unmatched. I love
-              how everything fits perfectly!"
+              &quot;The quality and style of all blue&apos;s clothing is unmatched. I love
+              how everything fits perfectly!&quot;
             </p>
             <p className="font-semibold">- Happy Customer {index + 1}</p>
           </div>
