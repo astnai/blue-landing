@@ -42,6 +42,10 @@ export default function Home() {
   const openQuickView = (product: Product) => setQuickViewProduct(product);
   const closeQuickView = () => setQuickViewProduct(null);
 
+  const handleAddToCart = (product: Product) => {
+    console.log(`Added ${product.name} to cart`);
+  };
+
   return (
     <div className="min-h-screen bg-blue-600 text-white">
       <Header />
@@ -52,11 +56,13 @@ export default function Home() {
           title="Featured Products"
           products={featuredProducts}
           onQuickView={openQuickView}
+          onAddToCart={handleAddToCart}
         />
         <ProductGrid
           title="Our Collection"
           products={allProducts}
           onQuickView={openQuickView}
+          onAddToCart={handleAddToCart}
         />
         <Testimonials />
         <Newsletter />
